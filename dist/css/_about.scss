@@ -1,0 +1,146 @@
+.about-page{
+    background: $cream;
+    padding-top: 3rem;
+    
+  
+    &__description {
+        display: flex;
+        padding: 1rem;
+        @include media-sm {
+            flex-direction: column;
+        }
+    }
+    &__content {
+        position: relative;
+        height: 450px;
+        margin: 1.5rem;
+        margin-top: 0;
+        background: url('/img/kevin-menya-XWrEpATTmq8-unsplash.jpg') center center;
+        background-size: cover;
+        margin-bottom: 1rem;
+        @include media-sm {
+            height: 18rem;
+
+        }
+
+    }
+    &__title{
+        padding: 3rem;
+        font-size: 1.3rem;
+        font-weight: 200;
+        line-height: 1.3;
+        @include media-sm {
+            padding: .7rem;
+        }
+    }
+
+}
+.about-page h1{
+    text-align: left;
+    font-size: 3rem;
+    color: $charcoalgray;
+    font-weight: 500;
+    @include media-sm {
+        font-size: 2rem;
+    }
+}
+.about-page p{
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+.bespoke__art h2{
+    text-align: center;
+   
+}
+.bespoke__art P{
+    padding: 1rem;
+    text-align: left;
+   
+}
+.about__conclusion p{
+    margin: 1rem;
+    text-align: left;
+    font-weight: 400;
+    
+}
+.about__name {
+    color: $deepburgundy;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.about__work{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    @include breakpoints-up(medium) {
+       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoints-up(large) {
+       grid-template-columns: repeat(3,1fr);// grid-template-columns: repeat(2,1fr);
+    }
+    &__img{
+         background-size: cover;
+         height: 350px;
+        @include media-sm {
+            height: 18rem;
+
+        }
+
+    }
+    &__text {
+       
+       position:relative;
+        left: 1rem;
+       text-align: center;
+    }
+   
+}
+.about__work h2 {
+    
+   
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 500;
+  
+}
+
+.about-ceo__content {
+    position: relative;
+    margin: 1.5rem;
+   height: 18rem;
+    background: url('/img/599683_10202389121278237_252288472_n.jpg') center top;
+    background-size: cover;
+    margin-bottom: 1rem;
+    @include media-sm {
+        height: 18rem;
+
+    }
+
+}
+.about__work__ceo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    @include breakpoints-up(medium) {
+       grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoints-up(large) {
+       grid-template-columns: repeat(3,1fr);// grid-template-columns: repeat(2,1fr);
+    }
+    &__img{
+         background-size: cover;
+        @include media-sm {
+            height: 18rem;
+
+        }
+    }
+}

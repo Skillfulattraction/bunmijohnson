@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  },
+  "name": "bunmi-johnson",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

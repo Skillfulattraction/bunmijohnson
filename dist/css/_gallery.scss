@@ -1,0 +1,220 @@
+.gallery-body {
+    overflow-x: hidden;
+    
+
+}
+
+.gallery-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+}
+
+.gallery {
+    max-width: 95vw;
+    padding: 2rem 1rem;
+   
+
+    &__title {
+        font-size: 2.75rem;
+        color: $deepburgundy;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    &__products-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+
+        @include breakpoints-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoints-up(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__product {
+        text-align: center;
+        padding: 2rem 1.05rem;
+        background: $jasminewhite;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        outline: .2rem solid $deepburgundy;
+        outline-offset: -1.5rem;
+        cursor: pointer;
+
+        &:hover {
+            outline: .2rem solid #222;
+            outline-offset: 0;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+
+        &:hover h3 {
+            color: $deepburgundy;
+        }
+    }
+
+    &__product img {
+        height: 25rem;
+        width: 85%;
+    }
+
+    &__product h3 {
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: $charcoalgray;
+    }
+
+    &__product .price {
+        font-size: 1rem;
+        color: $charcoalgray;
+        padding-top: .2rem;
+
+    }
+
+    &__products-preview {
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, .1);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__products-preview .preview {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        background: $jasminewhite;
+        position: relative;
+        width: 30rem;
+        height:70%;
+    }
+
+    &__products-preview .preview h3 {
+        color: $charcoalgray;
+        padding: .5rem 0;
+        font-size: 2rem;
+        
+
+    }
+
+    &__products-preview .preview .stars {
+        color: $deepburgundy;
+
+    }
+
+    &__products-preview .preview.active {
+        display: inline-block;
+    }
+
+    &__products-preview .preview img {
+        height: 20rem;
+    }
+
+    &__products-preview .preview .price {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        color: $deepburgundy;
+    }
+
+    &__products-preview .preview p {
+        line-height: 1.5;
+        font-size: 1.4rem;
+        color: $charcoalgray;
+    }
+
+    &__products-preview .preview .bx-x {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        color: $charcoalgray;
+        font-size: 3rem;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__buttons a {
+        display: inline-block;
+        flex: 1 1 16rem;
+        padding: 1rem;
+        font-size: 1.8rem;
+        color: $charcoalgray;
+        border: .1rem solid $charcoalgray;
+    }
+
+    &__buttons a.cart {
+        background: $charcoalgray;
+        color: $jasminewhite;
+    }
+
+    &__buttons a.cart:hover {
+        background: $deepburgundy;
+
+    }
+
+    &__buttons a.cart:hover {
+        background: $deepburgundy;
+
+    }
+
+    &__buttons a.buy:hover {
+        background: $charcoalgray;
+        color: $jasminewhite;
+
+    }
+
+}
+
+
+@include media-sm-2 {
+    .gallery-body {
+        font-size: 55%;
+    }
+    .gallery__products-preview .preview {
+        margin-top: -10rem;
+        
+    }
+   
+  
+}
+
+@include media-sm {
+    .gallery__products-preview .preview img {
+        height: 20rem;
+        
+    }
+    
+    .gallery__products-preview .preview {
+        width: 90%;
+        margin-top: -10rem;
+        
+    }
+   
+   
+}
+
+@include media-sm-3 {
+    .gallery-body {
+        font-size: 50%;
+    }
+}

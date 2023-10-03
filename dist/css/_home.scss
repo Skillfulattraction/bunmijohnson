@@ -1,0 +1,328 @@
+// HERO SECTION ->
+.home {
+    height: 90vh;
+    width: 100vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 40vh;
+    border-bottom: 4px solid $charcoalgray;
+    overflow: hidden;
+    background: url('/img/vije-vijendranath-EKELvNSva6U-unsplash\ \(1\).jpg') center center;
+    background-size: cover;
+
+    &__hero {
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    &__hero h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $deepburgundy;
+        padding-bottom: 1rem;
+    }
+
+    &__hero .button {
+        border: 3px solid $charcoalgray;
+        background: linear-gradient(to right, $deepburgundy, $navyblue);
+        border-radius: 0.625rem;
+
+        &:hover {
+            background-color: $jasminewhite;
+            @include transition-up;
+            @include transition-ease;
+        }
+    }
+}
+
+
+// FEATURED PRODUCTS SECTION
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.125rem auto;
+    width: 95%;
+
+    &__heading {
+        font-size: 1.75rem;
+        color: $charcoalgray;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: 450;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        padding-bottom: .8rem;
+    }
+    &__description span {
+        text-align: center;
+        font-size: 1.225rem;
+        color: $deepburgundy;
+        font-weight: 400;
+        line-height: 1.2rem;
+        padding-bottom: .8rem;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 18.75rem;
+        padding: 0.5rem;
+        border: 3px solid #2c2c2c;
+        border-radius: 0.625rem;
+        margin: 0px 1.25rem;
+    }
+}
+
+.fp-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    //  overflow: hidden;
+}
+
+.fp-img a,
+.fp-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.fp-img a img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    @include transition-ease;
+}
+
+.fp-img__back {
+    display: none;
+}
+
+.fp-img-container:hover .fp-img__back {
+    display: block;
+}
+
+.fp-img-container:hover .fp-img__front {
+    display: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fp-box-text {
+    margin-top: 0.3125rem;
+    width: 100%;
+}
+
+.product-category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-category span {
+    color: $navyblue;
+    font-size: 0.9rem;
+    margin: 0.3125rem 0px;
+    font-weight: 400;
+}
+
+
+.product-title {
+    color: $deepburgundy;
+    font-weight: 600;
+}
+
+.product-title:hover {
+    color: $navyblue;
+    opacity: 0.7;
+    @include transition-ease;
+    font-weight: 620;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.price-buy .p-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $charcoalgray;
+}
+
+.price-buy .order-btn {
+    color: $rustorange;
+    font-size: 1.2rem;
+    margin: 0.3125rem 0px;
+    font-weight: 600;
+}
+
+.price-buy .order-btn:hover {
+    color: $deepburgundy;
+    @include transition-ease;
+}
+
+.slider-btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 1.875rem auto 0.625rem auto;
+    padding: 0px 0.625rem;
+}
+
+.slider-btns button {
+    position: static !important;
+    transform: translate(0, 0);
+    background-color: $newgold;
+    width: 5rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    border: 0.625rem;
+    border: 1px solid $charcoalgray;
+    border-radius: 0.5rem;
+
+}
+
+@include media-sm-3 {
+    .featured-products__box {
+        margin: 0px 0.625rem;
+
+    }
+
+    .featured-products {
+        width: 100%;
+    }
+
+    .featured-products__heading {
+        text-align: center;
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .fp-img a,
+    .fp-img {
+        height: 12.5rem;
+    }
+
+    .price-buy .p-price {
+        font-size: 1.1rem;
+
+    }
+
+    .fp-img-container:hover .p-img-back {
+        display: none;
+    }
+
+    .fp-img-container:hover .p-img-front {
+        display: block;
+    }
+}
+
+.intro-section {
+    background: $cream;
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 4px solid $charcoalgray;
+ 
+
+    &__info {
+        padding: 1rem;
+        
+        margin-bottom: 1.3rem;
+        font-size: 1.3rem;
+        justify-content: center;
+    }
+
+    &__info  p {
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        
+        
+
+    }
+    &__info h1
+     {
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+        font-size: 1.9rem;
+        font-weight: 400;
+        color:$charcoalgray;
+
+    }
+
+
+
+}
+@include media-sm {
+    .intro-section {
+        flex-direction: column;
+        &__info {
+            width: 95%;
+        }
+    }
+}
+
+.intro-section__img {
+    padding: 1rem;
+    border-radius: 1.875rem;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+}
+.connect {
+    &__btns{
+        display:flex;
+         justify-content: center;
+        text-align: center;
+        padding: .5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      
+    
+    }
+  
+    &__button {
+        width: 10rem ;
+        border: 4px solid $charcoalgray;
+        background-color: transparent;
+        padding: .5rem;
+        margin: 1rem;
+        font-size: 1.25rem;
+        background: $jasminewhite;
+        &:hover {
+            @include transition-up;
+            background: $cream;
+        }
+    }
+    &__description {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+    }
+}

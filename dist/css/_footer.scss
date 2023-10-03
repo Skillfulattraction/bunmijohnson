@@ -1,0 +1,93 @@
+.footer{
+    width: 100vw ;
+}
+ul,li {
+    list-style:none;
+}
+.footer {
+    background: $charcoalgray;
+    color: $offwhite;
+
+    &__info {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        padding: 1.5rem;
+        padding-bottom: .75rem;
+
+        &.footer-width {
+            padding: 0 0.9375rem;
+        }
+      
+    }
+}
+.footer h2{
+     
+        margin-bottom: 1.275rem;
+}
+
+.about, .contact {
+    width: 40%;
+}
+.link {
+    width: 20%;
+}
+
+.social-media ul {
+    display: flex;
+ 
+}
+ .social-media ul li a {
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.75rem;
+    background-color: transparent;
+    color: $deepgray;
+    text-align: center;
+    @include transition-ease;
+    
+}
+.social-media ul li a:hover {
+   
+    color: $offwhite;
+}
+.link ul li a {
+    display :block;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom:1.25rem ;
+
+}
+
+.link ul li a:hover{
+     color: $rustorange;
+ 
+}
+.contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact ul li span {
+    margin-right: 0.9375rem;
+}
+.copy-right {
+    padding: 0.9375rem;
+    text-align: center;
+    background-color: #2c2c2c;
+}
+.help li {
+    padding-bottom: 1.5rem;
+    color:$offwhite;
+  
+}
+.help li a {
+    color:$deepgray ;
+    &:hover{
+        color: $offwhite;
+    }
+}

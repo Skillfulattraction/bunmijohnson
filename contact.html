@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Contact page</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="/img/Untitled (1).png" alt="">
+        </a>
+        <nav class="nav ">
+
+            <ul class="menu-nav">
+                <li class="menu-nav__item ">
+                    <a href="index.html" class="menu-nav__link">Home</a>
+                </li>
+                <li class="menu-nav__item ">
+                    <a href="gallery.html" class="menu-nav__link">Gallery</a>
+                </li>
+                <li class="menu-nav__item ">
+                    <a href="about.html" class="menu-nav__link">About</a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="contact.html" class="menu-nav__link">Contact</a>
+                </li>
+                <li class="menu-nav__item ">
+                    <button class="button header__cta hide-for-desktop" type="button">stylist</button>
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        <!--- <a href="#" class="button header__cta hide-for-mobile" type="button">STYLIST</a>-->
+        <button class="button header__cta hide-for-mobile" type="button">STYLIST <i class='bx bxs-chat'></i></button>
+    </header>
+
+
+    <section class="contact-page contact-page-body">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>"Connect with Us: Reach Out and Let's Create Your Style Together"</p>
+
+        </div>
+        <div class="cContainer">
+            <div class="contact__info">
+                <div class="cBox">
+                    <div class="cIcon"><i class='bx bxs-map'></i></i></div>
+                    <div class="cText">
+                        <h3>Adress</h3>
+                        <p>adress sugar street</p>
+                    </div>
+                </div>
+                <div class="cBox">
+                    <div class="cIcon"><i class='bx bxs-phone'></i></div>
+                    <div class="cText">
+                        <h3>Phone</h3>
+                        <p>0913999369</p>
+                    </div>
+                </div>
+                <div class="cBox">
+                    <div class="cIcon"><i class='bx bxs-envelope'></i></div>
+                    <div class="cText">
+                        <h3>Email</h3>
+                        <p>bunmijohnson54@gmail.com</p>
+                    </div>
+                </div>
+                <div class="cBox">
+                    <div class="cIcon"><i class='bx bxl-whatsapp'></i></div>
+                    <div class="cText">
+                        <h3>WHATSAPP</h3>
+                        <p>09139993695</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="contact-page__form">
+                <!-- contact.html -->
+                <form action="mailto:bunmijohnsoncollection10121@yahoo.com" method="POST" class="contact-form" enctype="text/plain">
+                    <h2>Contact Us</h2>
+                    <div class="inputbox">
+                        <input type="text" name="contactname" id="contactname" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input name="email" type="text" id="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="Message" id="Message" cols="30" rows="10" required="required"></textarea>
+                        <span>Type Your Message</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="submitbutton" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="copy-right">
+            <p style="color: #f5f5f5;">&copy; 2023 Bunmi Johnson's Collection. All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

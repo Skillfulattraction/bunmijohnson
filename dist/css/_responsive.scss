@@ -1,0 +1,175 @@
+@include media-md {
+
+    .menu-btn {
+        visibility: hidden;
+    }
+   
+        
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+
+            &__item {
+                display: inline;
+                padding-right: 1.125rem;
+            }
+
+            &__link {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .button {
+        top: 1rem;
+        right: 1rem;
+        justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button {
+        padding: .8rem 2rem ;
+        border: 0;
+        border-radius: 1.25rem;
+        cursor: pointer;
+     
+      
+       text-align: center;
+       &:hover{
+        background: $rustorange;
+        color: $deepburgundy;
+       }
+        
+
+    }
+
+}
+
+
+@include media-sm {
+    .home {
+        height: 60vh;
+        overflow: hidden;
+        background: url('/img/vije-vijendranath-EKELvNSva6U-unsplash\ \(1\).jpg') center top;
+        background-size: cover;
+        &__hero {
+           transform: translateY(-6.25rem);
+           padding-left: 2rem;
+          
+           text-align: left;
+          
+        }
+        &__hero h2  {
+            font-weight: 600;
+            font-size: 2.35rem;
+           
+        }
+    }
+
+    .menu-nav{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        margin-left: 2rem;
+
+        &__item{
+            border-bottom: 2px solid $charcoalgray;
+            margin-right: 2rem;
+        }
+       
+    }
+    .hero-btn{
+        margin-top: 7rem;
+    }
+  
+}
+
+
+
+@include media-lg {
+    .about , .contact {
+        width: 45%;
+    }
+    .link {
+        width: 40%;
+    }
+    .home{
+        height: 94vh;
+        width: 100vw;
+    }
+}
+@include media-sm {
+    .about,.contact , .link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer__info {
+        flex-direction: column;
+    }
+}
+
+//Breakpoints
+@media (min-width:64em){
+    
+}
+//640px, 1024px, 1400px 
+$breakpoints-up: ("medium":"40em","large":"64em","xlarge":"87.5em");
+// 639px , 1023px , 1399px
+$breakpoints-down: ("small":"39.375em","medium":"63.937em","large":"87.4375em");
+
+@mixin breakpoints-up($size) {
+    @media (min-width:map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+@mixin breakpoints-down($size) {
+    @media (max-width:map-get($breakpoints-down, $size)){
+        @content;
+    }
+}
+.hide-for-mobile {
+    @include breakpoints-down(medium){
+        display: none;
+    }
+    
+}
+
+    
+    .home {
+        
+        background: url('/img/vije-vijendranath-EKELvNSva6U-unsplash\ \(1\).jpg') center top;
+        background-size: cover;
+        @include breakpoints-down(large){
+            height: 70vh;
+            overflow: hidden;
+        }
+        &__hero {
+           transform: translateY(-6.25rem);
+           padding-left: 2rem;
+          
+           text-align: left;
+          
+        }
+        &__hero h2  {
+            font-weight: 600;
+            font-size: 2.35rem;
+           
+        }
+    }
+
+.hide-for-desktop {
+    @include breakpoints-up(large){
+        display: none;
+    }
+
+}

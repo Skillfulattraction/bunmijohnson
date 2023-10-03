@@ -1,0 +1,64 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'responsive';
+@import 'gallery';
+@import 'button';
+@import 'footer';
+@import 'contact';
+@import 'popup';
+@import 'about';
+@import 'collection';
+
+
+
+
+
+
+
+body {
+    height: 100vh;
+    font-family: 'Merriweather', serif;
+    line-height: 1;
+    font-weight: 300;
+    background:$back-color;
+    overflow-x: hidden;
+
+}
+*{
+    scroll-behavior: smooth;
+}
+
+a {
+    color: $offwhite;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+
+    width: 100%;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    top: 1rem ;
+    left: 1rem;
+ 
+}

@@ -1,0 +1,232 @@
+.work__collection {
+    padding: 20px;
+
+}
+
+.checklist {
+
+    &__button {
+        margin: 0 auto;
+        display: block;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        width: 15.625rem;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        border-radius: 0.3125rem;
+        background-color: $charcoalgray;
+        color: $jasminewhite;
+        box-shadow: 0px, 0.3125rem, 0px $deepburgundy;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transition: translateY(-0.3125rem);
+            box-shadow: 0px 0px 0px $deepburgundy;
+
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+
+        @include breakpoints-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoints-up(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+    &__item {
+
+        border-radius: 0.875rem;
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.20);
+        background-color: #f5f2da;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.05)
+        }
+
+    }
+
+    &__image {
+        height: 19.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center  center;
+
+    }
+
+    &__text {
+
+        color: $charcoalgray;
+        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+
+        @include breakpoints-up(medium) {
+            padding: 1.875rem 1.5625rem;
+        }
+    }
+
+    &__author {
+        font-size: 0.825rem;
+        font-weight: 300;
+        margin-bottom: 0.75rem;
+    }
+    &__header{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: $charcoalgray;
+        font-weight: 700;
+        padding: 1rem;
+        margin-bottom: 0.95rem;
+        padding-top: 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.475rem;
+        line-height: 1.2rem;
+        color: $navyblue;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+    }
+}
+
+.selfcare {
+   margin-top: 1rem;
+    &__content {
+        height: 500px;
+        width: 100vw;
+        background: url('/img/skincare/CAFZk9nO.jpg') center center;
+        background-size: cover;
+        margin-bottom: 1rem;
+        @include media-sm {
+            height: 18rem;
+
+        }
+
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.475rem;
+        line-height: 1.2rem;
+        color: $deepburgundy ;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+    }
+
+    &__button {
+        margin: 0 auto;
+    
+        display: block;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        width: 12.625rem;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        border-radius: 0.3125rem;
+        background-color: $charcoalgray;
+        color: $jasminewhite;
+        box-shadow: 0px, 0.3125rem, 0px $deepburgundy;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transition: translateY(-0.3125rem);
+            box-shadow: 0px 0px 0px $deepburgundy;
+        }
+    }
+}
+.bespoke__content {
+    height: 500px;
+    width: 100vw;
+    background: url('/img/kevin-menya-XWrEpATTmq8-unsplash.jpg') center center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    @include media-sm {
+        height: 18rem;
+
+    }
+
+}
+.kids__button{
+    margin: 0 auto;
+    
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    width: 14.625rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.3125rem;
+    background-color: $charcoalgray;
+    color: $jasminewhite;
+    box-shadow: 0px, 0.3125rem, 0px $deepburgundy;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transition: translateY(-0.3125rem);
+        box-shadow: 0px 0px 0px $deepburgundy;
+    }
+
+}
+.aso-ebi__content {
+     
+        height: 450px;
+        width: 100vw;
+        background: url('/img/graca-assane-eyT2DnV5HhI-unsplash-2.jpg') center center;
+        background-size: cover;
+        margin-bottom: 1rem;
+        @include media-sm {
+            height: 18rem;
+
+        }
+}
+.aso-ebi__description {
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 400 ;
+   
+    margin: 0 auto;
+  
+    
+    @include media-lg {
+        width: 60vw;
+    }
+}
+.aso-ebi__description span  {
+    color: $deepburgundy;
+    font-size: 1.35rem;
+    font-weight: 400;
+}
